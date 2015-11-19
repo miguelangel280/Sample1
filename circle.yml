@@ -9,10 +9,20 @@
 ## Customize the test machine
 machine:
   # Version of java to use
-  java:
-    version: oraclejdk8
+  
+
+   #java:
+    #version: oraclejdk8
 
 ## Customize test commands
 #test:
  # override:
    # - sh build.sh
+
+
+
+test:
+  override:
+
+  - mkdir -p $CIRCLE_TEST_REPORTS/cucumber
+  - bundle exec cucumber --format json --out $CIRCLE_TEST_REPORTS/cucumber/tests.cucumber
