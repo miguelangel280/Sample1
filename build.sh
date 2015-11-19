@@ -1,4 +1,4 @@
 #java  StringCalculator
-vim readme.txt
+#vim readme.txt
 
-exit
+#exit

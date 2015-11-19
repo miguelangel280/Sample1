@@ -13,6 +13,6 @@ machine:
     version: oraclejdk8
 
 ## Customize test commands
-test:
-  override:
-    - sh build.sh
+#test:
+ # override:
+   # - sh build.sh
